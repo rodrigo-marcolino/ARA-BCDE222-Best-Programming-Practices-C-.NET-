@@ -6,7 +6,8 @@ namespace SyntaxTestOne
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var controller = new SumAndAverageController(new ConsoleView());
+            controller.Go();
         }
     }
 }
